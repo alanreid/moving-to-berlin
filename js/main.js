@@ -23,7 +23,7 @@ $(function() {
     localStorage.setItem('cookies', true);
   });
 
-  if(localStorage.getItem('cookies') !== undefined) {
+  if(localStorage.getItem('cookies') !== undefined && localStorage.getItem('cookies') === true) {
     $('#cookies').remove();
   }
 
