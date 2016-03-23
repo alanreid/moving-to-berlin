@@ -4,7 +4,7 @@ $(function() {
     once: false,
     onPassing: function() {
       var route = $(this).data('route');
-      
+
       if(route.length > 0) {
         window.location.hash = '#' + route;
       }
@@ -17,6 +17,15 @@ $(function() {
     var route = $(this).attr('href').replace('\#', '');
     Router.goTo(route);
   });
+
+  $('#cookies button').click(function() {
+    $('#cookies').remove();
+    localStorage.setItem('cookies', true);
+  });
+
+  if(localStorage.getItem('cookies') !== undefined) {
+    $('#cookies').remove();
+  }
 
   Router.init();
 
