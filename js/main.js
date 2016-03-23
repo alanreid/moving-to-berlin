@@ -20,10 +20,10 @@ $(function() {
 
   $('#cookies button').click(function() {
     $('#cookies').remove();
-    localStorage.setItem('cookies', true);
+    localStorage.setItem('cookies', 'off');
   });
 
-  if(localStorage.getItem('cookies') !== undefined && localStorage.getItem('cookies') === true) {
+  if(localStorage.getItem('cookies') !== undefined && localStorage.getItem('cookies') === 'off') {
     $('#cookies').remove();
   }
 
