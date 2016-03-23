@@ -22,6 +22,15 @@ $(function() {
     $('#cookies').remove();
   }
 
+  if($(window).height() < 500) {
+    $('#sidebar .content').hide();
+    $('#content').removeClass('twelve wide').addClass('sixteen wide');
+  } else if($(window).height() < 600) {
+    $('#sidebar').addClass('small');
+  } else if($(window).height() < 660) {
+    $('#sidebar').addClass('medium');
+  }
+
   Router.init();
 
 });
