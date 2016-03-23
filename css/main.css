@@ -1,0 +1,44 @@
+
+body {
+  font-size: 12pt;
+}
+
+h1 {
+  padding: 30px 0 0 0;
+}
+
+h3 {
+  padding-top: 30px;
+}
+
+.widelist li {
+  margin: 20px 0;
+}
+
+.process h3 {
+  padding: 0;
+}
+
+.conclusion img {
+  margin: 80px 0;
+}
+
+#sidebar .content {
+  position: fixed;
+  margin-top: 30px;
+}
+
+#footer {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 10pt;
+}
+
+@media only screen and (max-width: 991px) {
+  #sidebar {
+    display: none;
+  }
+  #content {
+    width: 100% !important;
+  }
+}
