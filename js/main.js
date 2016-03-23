@@ -4,11 +4,6 @@ $(function() {
     once: false,
     onPassing: function() {
       var route = $(this).data('route');
-
-      if(route.length > 0) {
-        window.location.hash = '#' + route;
-      }
-
       Router.updateMenu(route);
     }
   });
